@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 10px */
+}
+
+/*REM = Root EM */
+
+body {
+  background: #ECE9FD;
+  font-family: 'Epilogue', sans-serif;
+
+  padding: 6.0rem 2.3rem 6.6rem;
+  font-size: 1.6rem; /* 16px */
+  line-height: 3.2rem;
+}
+
+main {
+  max-width: 33.0rem;
+  margin: 0 auto;
+}
+
+main p:first-child {
+  color: #7158EF;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 1.7rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  color: #090039;
+
+  margin-bottom: 1.5rem;
+}
+
+/* pegar o p que tenha um h1 anterior a ele */
+h1 + p {
+  color: rgba(10, 0, 57, 0.64);
+  margin-bottom: 3.2rem;
+}
+
+a {
+  color: #090039;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7158EF;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  margin-top: 7.2rem;
+
+  color: #090039;
+}
+
+ul li {
+  font-weight: 700;
+  font-size: 2.4rem;
+
+  max-width: 25.7rem;
+  display: flex;
+  gap: 3.8rem;
+}
+
+ /* pegar todos os li que tenham outro li anterior a ele */
+ ul li + li {
+  margin-top: 3.2rem;
+}
+
+ul li span{
+  
+  font-weight: 800;
+  font-size: 7.2rem;
+  line-height: 8.0rem;
+  letter-spacing: -2px;
+}
+
+/* media queries */
+@media (min-width: 700px /*tablet*/) {
+  
+  body {
+    padding: 8rem;
+  }
+  
+  main {
+    max-width: 1020px /*usei px porque trata-se da largura do main*/;
+    display: flex;
+    gap: 10rem;
+  }
+
+  /* primeiro div do main */
+  main > div {
+    max-width: 484px;
+  }
+
+  ul li {
+    gap: 5.3rem;
+    max-width: 450px;
+    align-items: center;
+  }
+
+ 
+}
